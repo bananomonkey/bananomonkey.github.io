@@ -1,0 +1,205 @@
+/*NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him.*/
+
+/* Examples (uncomment to use): */
+
+/* Expand site width */
+/* body .wrapper { max-width: 1400px !important; } */
+
+/* Set site background image */
+/* body { background: url(image_source) top no-repeat; } */
+
+/* Hide compare button */
+/* a.compare_item { display: none !important; } */
+
+
+body .wrapper { max-width: 1920px !important; }
+
+/* ОБЩЕЕ */
+ao { font-size: 10pt; line-height: 1.5em; text-align: justify; }
+
+p { font-size: 10pt; line-height: 1.5em; text-align: justify; }
+
+ol { margin-top: 0.1em; margin-bottom: 0.5em; list-style-type: decimal; }
+
+ul { margin-top: 0.1em; margin-bottom: 0.5em; }
+
+li { font-size: 10pt; line-height: 1.5em; }
+
+.detail_text table { margin-top: 0.5em; }
+
+.detail_text i b { font-size: 11pt; line-height: 2em; color: black; text-align: justify; }
+
+@media all and (max-width: 660px) {
+ao { font-size: 11pt; line-height: 1.5em; text-align: justify; }
+p { font-size: 11pt; line-height: 1.5em; text-align: justify; }
+li { font-size: 11pt; line-height: 1.5em; }
+}
+
+.center {
+max-width: 100%; 
+margin: auto;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+div.container {
+  width: 100%; /* было 96% */
+  margin: 0 auto; /* центрируем основной контейнер */
+}
+
+.top-window{
+background: #b5c7d3;
+background: -moz-linear-gradient(to top, #B8C9D4, #C8D5DE, #DAE4EA);
+background: -webkit-linear-gradient(to top, #B8C9D4, #C8D5DE, #DAE4EA);
+background: linear-gradient(to top, #B8C9D4, #C8D5DE, #DAE4EA);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+height: 30px; 
+padding-left: 10px; 
+padding-top: 5px; 
+letter-spacing: 1px;
+}
+
+.top-window a{
+color: #355367 !important;
+text-decoration:none; 
+text-shadow: 0 1px 0 rgb(255 255 255 / 30%);
+}
+
+.top-window a:hover{
+color: #5C7B8E !important;
+}
+
+ul.menu, ul.mini-menu {
+background: linear-gradient(to top, #B8C9D4, #C8D5DE, #DAE4EA) !important;
+}
+
+.phone_feedback { text-align: left; font-size: 12px !important; line-height: 1.5em; }
+
+/* .header .basket { background: none; border-left: 2px solid gray; } */
+
+/* ВЕРХ */
+.top_block { margin: 0 !important; padding: 0 !important; max-width: 100% !important; min-height: 42px !important; }
+.top_block .phone_feedback { float: left !important; margin-left: 4px !important; margin-right: 2px !important; margin-top: 2px !important; }
+.top_block .social_link{ float: left !important; margin-right: 2px !important; margin-left: 15px !important; margin-top: 3px !important; }
+.top_block .auth_form { float: right !important; margin-right: 4px !important; margin-left: 2px !important; font-size: 13px !important; font-weight: bold; }
+.top_block .search { float: right !important; margin-right: 15px !important; margin-left: 2px !important; }
+
+@media all and (max-width: 400px) { .top_block .search { display: none !important; } }
+@media all and (min-width: 620px) { .top_block .social_link{ display: inline-block !important; margin-left: 15px !important; } .top_block .search { margin-right: 15px !important } }
+@media all and (min-width: 1200px) { .top_block .social_link{ margin-left: 50px !important; } .top_block .search { margin-right: 50px !important } }
+
+.logo { margin-top: -5px !important; margin-bottom: 5px !important; }
+.logo img { width: 200px; height: 74px; }
+.shop_description { width: 200px; height: 30px; margin: 2px 0 0 100px !important; font-size: 11pt; line-height: 1.5em; color: gray; }
+
+.title { font-size: 15pt !important; font-weight: bold !important; }
+.breadcrumb { font-size: 11pt !important; }
+@media all and (max-width: 760px) { .title { font-size: 14pt !important; }}
+
+/* КОНТЕНТ */
+.index-cat td.left-block { max-width: 200px; }
+.index-cat td.right-block { max-width: 200px; padding-left: 30px !important; }
+
+.inside_page_content { margin-left: 150px; }
+
+.table_item_inner .desc_name { text-align: left; }
+.table_item_inner .price_block { text-align: left; }
+
+.front-content { display: inline-block ; }
+.front-articles { float: left; width: 49%; margin-bottom: 10px; font-weight: bold; font-size: 11pt; line-height: 1.5em; }
+.front-news { float: right; width: 49%; }
+.news-list .news-date-time { font-style: italic; }
+
+@media all and (max-width: 660px) { .front-articles { display: inline-block ; width: 100%; } .front-news { display: inline-block ; width: 100%; } }
+@media all and (max-width: 760px) { .index-cat td.right-block { display: none; }}
+
+.brands_list_ws { height: 52px !important; }
+
+/* НИЗ */
+.header + .content{ padding: 0; }
+.footer_wr { padding: 0px !important; margin: 0 auto 0; min-height: 90px !important;  }
+.footer_inner { margin: 0px !important; padding: 0px !important; max-width: 100% !important; height: 90px !important; }
+.bottom_mail { margin-left: auto; margin-right: auto; margin-top: -80px !important; }
+
+.footer_inner .left_col { width: 195px !important; float: left !important; margin-left: 15px !important; margin-top: 10px !important; }
+.footer_inner .copy { float: left !important; margin: 0 !important; }
+
+.footer_inner .right_col { width: 195px !important; float: right !important; margin-right: 12px !important; margin-top: 10px !important; }
+.footer_inner .phone_feedback { float: right !important; margin: 0 !important; }
+.footer_inner .payment { float: right !important; margin: 0 !important; }
+
+@media all and (max-width: 850px) {.bottom_mail { margin-top: -15px !important; }}
+
+/* МЕНЮ */
+ul#vertical-multilevel-menu, #vertical-multilevel-menu ul { width: 200px !important; }
+#vertical-multilevel-menu li ul { left: 20px !important; width: auto !important; }
+.left_block, .left_menu { width: 130px !important; }
+
+/* СПИСОК ТОВАРА */
+.long_separator { display: none; }
+.display_list .list_item .information { float: right; }
+@media all and (max-width: 400px) { .catalog_section_list .section_item { margin-right: 50px !important; } }
+
+/* ТОВАР */
+.item_slider ul.slides img { max-height:270px; }
+.shadow-item_info { display: none; }
+
+/* СТАТЬЯ */
+.article_detail { margin: 0 auto; max-width: 1024px; }
+.article_detail .gallery{ display: none !important; }
+.article_detail .left_data{ float: none !important; }
+.article_detail .right_data{ padding: 0 !important; }
+
+.news-detail { margin: 0 auto; max-width: 1024px; }
+.news-detail .gallery{ display: none !important; }
+.news-detail .left_data{ float: none !important; }
+.news-detail .right_data{ padding: 0 !important; }
+
+/* КОРЗИНА */
+#id-cart-list .button[name="FastOrder"] { display: none !important; } /*кнопка быстрой продажи в корзине*/
+
+@media all and (max-width: 400px) {
+.header .basket { width: 60px; }
+.header .basket .counter_mini { margin-right: -12px !important; }
+.header .basket { margin-right: -10px !important;}
+.header .basket .delay { display: block !important; }
+.display_rows .buttons .likes_icons { float: right !important; }
+.display_rows .price_block .price, .display_rows .desc_name { font-size: 10px !important; }
+}
+
+/* ФОРУМ */
+div.forum-header-box { color: #000000; background: #b5c7d3; border-color: #b5c7d3; }
+table { font-size:1em; }
+
+@media all and (max-width: 560px) {
+table.forum-table th.forum-column-lastpost, table.forum-table td.forum-column-lastpost { display: none; }
+}
+
+@media all and (max-width: 500px) {
+table.forum-table th.forum-column-views, table.forum-table td.forum-column-views { display: none; }
+}
+
+@media all and (max-width: 400px) {
+div.forum-statistics-allusers, div.forum-statistics-users { display: none; }
+table.forum-table th.forum-column-icon, table.forum-table td.forum-column-icon { display: none; }
+table.forum-table th.forum-column-replies { font-size:0em; } 
+table.forum-table th.forum-column-lastpost, table.forum-table td.forum-column-lastpost { display: none; }
+table.forum-table th.forum-column-views, table.forum-table td.forum-column-views { display: none; }
+table.forum-table th.forum-column-topics, table.forum-table td.forum-column-topics { display: none; }
+table.forum-post-table td.forum-cell-user { width:100px; font-size:1em;  }
+}

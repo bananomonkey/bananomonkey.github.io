@@ -1,0 +1,129 @@
+/* ============================================================
+   РОБОТОТЕХНИКА — offline reconstruction glue styles
+   Минимальные правила для вёрстки, восстановленной по классам
+   Aspro (styles.min.css) и настройкам template_styles.css.
+   Файл добавлен при восстановлении страницы.
+   ============================================================ */
+
+/* ---------- common ---------- */
+html, body { height: 100%; }
+body { margin: 0; background: #fff; font-family: Arial, Roboto, Tahoma, Verdana, sans-serif; font-size: 13px; }
+.clear_both { clear: both; height: 0; overflow: hidden; }
+.wrapper_inner { max-width: 1900px; margin: 0 auto; padding: 0 10px; }
+
+/* ---------- top bar ---------- */
+.top_block { min-height: 42px; font-size: 12px; }
+.top_left { float: left; }
+.top_right { float: right; }
+.top_right .social_link { float: left; margin: 9px 12px 0 0; }
+.top_right .social_link img { vertical-align: middle; }
+.phone_feedback { float: left; padding-left: 26px; line-height: 42px; margin-right: 18px; }
+.phone_feedback a.feedback { color: #3280ad; text-decoration: none; }
+.phone_feedback a.feedback:hover { text-decoration: underline; }
+.auth_block { float: left; line-height: 42px; }
+.auth_enter { position: relative; padding-left: 22px; display: inline-block; }
+.auth_enter { background-position: 0 12px !important; background-repeat: no-repeat; }
+.enter_link > a span { background: none !important; } /* один значок (замок), без дублирующего */
+.auth_enter a { color: #636363; text-decoration: none; }
+.auth_enter a:hover { color: #3280ad; }
+
+/* ---------- header middle row ---------- */
+.logo_row { padding: 6px 0 14px; }
+.logo img { max-height: 74px; }
+.logo img { display: block; }
+.shop_description { display: block; width: 200px; margin: 0 0 0 100px !important; line-height: 1.4em; white-space: nowrap; }
+.search { float: left; margin: 30px 0 0 60px; }
+.search input[type="text"] { font-size: 13px; color: #636363; }
+.basket_wrapp { float: right; }
+.basket { top: 0; }
+.basket form { height: 62px; line-height: normal; display: flex; align-items: center; }
+.basket .icon { position: static; margin-right: 8px; flex: none; }
+.basket .delay { position: static; margin-right: 24px; display: flex; align-items: center; }
+.basket .delay .icon { position: static; margin-right: 8px; }
+.basket .delay a { text-decoration: none; margin-left: 0; }
+.basket .delay .counter { margin-left: 5px; }
+.basket .counter { position: static; font-size: 12px; line-height: 17px; text-align: left; }
+.basket .button { margin-left: 22px; margin-top: 0; flex: none; }
+
+/* ---------- main menu ---------- */
+.menu_row { position: relative; z-index: 120; }
+ul.menu { border-radius: 3px 3px 0 0; padding: 0 10px; }
+ul.menu > li { display: inline-block; }
+ul.menu li a { font-size: 14px; font-weight: 700; text-decoration: none; }
+ul.menu li .child.cat_menu ul { float: left; list-style: none; width: 24%; margin: 0; padding: 0 10px 0 0; }
+ul.menu li .child.cat_menu:after { content: ""; display: table; clear: both; }
+ul.menu li .child ul li { display: block; padding: 0; }
+ul.menu li .child .menu_title { padding: 2px 0 8px; font-weight: 700; }
+ul.menu li .child ul li a { font-size: 13px; line-height: 24px; text-decoration: none; }
+
+/* ---------- front blocks ---------- */
+.content.front h3 { color: #212121; letter-spacing: 0.4px; }
+.top_banner { margin-bottom: 10px; }
+.flexslider.loading .slides { min-height: 60px; }
+.content.front .flexslider .slides img { width: 100%; }
+
+.catalog_section_list { margin-bottom: 30px; }
+.catalog_section_list .section_item .name { font-weight: 700; }
+.catalog_section_list .section_item ul { list-style: none; padding: 0; margin: 8px 0 0; }
+.catalog_section_list .section_item ul li { padding: 0 9px 0 0; }
+
+/* popular products */
+.index-cat { margin-bottom: 35px; }
+.index-cat table { width: 100%; border-collapse: collapse; }
+.index-cat .left-block h3 { margin-top: 0; }
+.left_menu ul { list-style: none; padding: 0; margin: 0 0 25px; }
+.left_menu li { border-bottom: 1px solid #e4e4e4; }
+.left_menu li a { display: block; padding: 9px 2px; color: #355367; text-decoration: none; font-size: 13px; }
+.left_menu li a:hover { color: #3280ad; }
+.index-cat .right-block { padding-left: 30px; }
+.left_banner { margin: 0 0 18px; max-width: 200px; }
+.left_banner img { border-radius: 4px; display: block; }
+.items_list { font-size: 0; margin: 0 -10px; }
+.index-cat .table_item { width: 220px; margin: 10px; }
+.index-cat .table_item .image { height: 200px; line-height: 200px; }
+.index-cat .table_item .mark { position: absolute; left: 0; top: 0; width: 45px; height: 18px; z-index: 5; }
+.index-cat .table_item .mark.hit { background: url(_files/images/markers_product.png) 0 0 no-repeat; }
+.index-cat .table_item .mark.new { background: url(_files/images/markers_product.png) -92px 0 no-repeat; }
+.index-cat .table_item .mark.like { background: url(_files/images/markers_product.png) -47px 0 no-repeat; }
+.index-cat .table_item .mark.share { background: url(_files/images/markers_product.png) -138px 0 no-repeat; }
+.index-cat .table_item a.desc_name { min-height: 54px; }
+.index-cat .table_item .likes_icons { float: none; margin: 2px 0 6px; }
+.index-cat .table_item .likes_icons a.wish_item { display: inline-block; width: 20px; height: 18px; background: url(_files/images/add_compare_icons.png) 0 0 no-repeat; position: static; margin: 0; }
+.index-cat .table_item .likes_icons a.wish_item:hover { background-position: 0 -25px; }
+.index-cat .table_item .likes_icons a.compare_item { display: inline-block; width: 20px; height: 18px; background: url(_files/images/add_compare_icons.png) -26px 0 no-repeat; position: static; margin: 0 0 0 8px; }
+.index-cat .table_item .likes_icons a.compare_item:hover { background-position: -26px -25px; }
+.index-cat .table_item .button_block { float: right; margin-top: 3px; }
+.index-cat .table_item .price { float: left; margin-top: 8px; }
+.index-cat .table_item .price span { font-size: 17px; font-weight: 700; color: #232323; }
+.index-cat .table_item .price i { font-style: normal; font-size: 13px; font-weight: 400; }
+
+/* ---------- front: articles + news (front-articles / front-news) ---------- */
+.front-blog { font-size: 0; margin: 0; }
+.front-blog .item { font-size: 13px; min-height: 120px; margin-bottom: 18px; }
+.front-blog .item .thumb_news { float: left; width: 150px; margin: 0 15px 5px 0; }
+.front-blog .item .thumb_news img { border-radius: 3px; opacity: .75; display: block; }
+.front-blog .item:hover .thumb_news img { opacity: 1; }
+.front-blog .item .item_link { display: block; font-weight: 700; font-size: 14px; line-height: 18px; color: #212121; text-decoration: none; margin-bottom: 8px; overflow: hidden; }
+.front-blog .item .item_link:hover { color: #3280ad; }
+.front-blog .item .preview_text { color: #636363; line-height: 1.45; font-size: 12px; }
+
+/* ---------- brands ---------- */
+.brands_list ul { text-align: center; }
+.brands_list li { float: none; display: inline-block; width: 180px; }
+
+/* ---------- footer (compact, per template_styles.css) ---------- */
+.footer_inner { font-size: 12px; overflow: hidden; }
+.footer_inner .left_col ul { list-style: none; padding: 0; margin: 0; }
+.footer_inner .left_col li { padding: 1px 0; }
+.footer_inner .left_col a { color: #636363; text-decoration: none; }
+.footer_inner .left_col a:hover { color: #3280ad; }
+.friend_badges img { margin: 6px 10px 0 0; vertical-align: middle; }
+.footer_inner .copy { line-height: 1.5; color: #7b7b7b; text-align: left; margin-left: 230px !important; }
+.footer_inner .copy a { color: #3280ad; }
+.footer_inner .right_col { text-align: right; }
+.footer_inner .right_col .phone_feedback { float: right; padding-left: 0; line-height: 20px; margin-right: 14px; }
+.footer_inner .right_col .social_link { float: right; margin: 4px 0 0; }
+.footer_inner .right_col .social_link img { vertical-align: middle; }
+.footer_inner .right_col .payment { clear: both; float: right; margin-top: 6px; }
+.footer_inner .right_col .payment img { margin-left: 8px; vertical-align: middle; }
+.bitrix_badge { vertical-align: middle; margin-left: 3px; }
